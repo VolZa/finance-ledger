@@ -1,0 +1,13 @@
+.title {
+  text-align: center;
+  margin:0 auto 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  // margin: 0 auto 50px;
+  @include desktop{
+    margin: 0 auto 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}

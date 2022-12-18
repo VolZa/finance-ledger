@@ -1,0 +1,51 @@
+.features {
+}
+
+.feature__subtitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  @include tablet{
+    display: block;
+  }
+}
+
+.feature__text {
+  line-height: 1.71;
+  color: var(--color-context);
+}
+
+.features__items {
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+  gap: 0px 30px;
+}
+
+.features__item {
+  // display: flex;
+  margin-bottom: 30px;
+  @include mobile {
+    @include width-calc(1, 30px);
+  }
+  @include tablet {
+    @include width-calc(2, 30px);
+  }
+  @include desktop {
+    @include width-calc(4, 30px);
+  }
+}
+
+.features__thumb {
+  @include flex-centered();
+  margin-bottom: 30px;
+  min-height: 120px;
+  background-color: var(--white-background);
+}
+
+.features__icon {
+  width: 70px;
+  height: 70px;
+}

@@ -1,0 +1,50 @@
+.portfolio {
+  padding-top: 60px;
+  @include desktop{
+    padding-top: 94px;
+  }
+}
+.filters {
+    @include flex-centered(normal, normal);
+    flex-wrap: wrap;
+    max-width: 400px;
+    justify-content: left;
+    gap: 15px 8px;
+    margin-bottom: 40px;
+
+  @include tablet {
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}
+
+.filters__button {
+  padding: 6px 22px;
+
+  font-family: "Roboto", san-serif; 
+  font-size: 16px; 
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 1.63;
+  color: var(--color-main);
+  background-color: var(--white-background);
+
+  transition: color  $timingFunction,
+      background-color  $timingFunction,
+      box-shadow  $timingFunction;
+      // var(--timing-function) 
+  &:hover, &:focus {
+    @extend %button-selected;
+  }
+}
+
+.filtered {
+  @extend %button-selected;
+  color: var(--white-acsent);
+  background-color: var(--color-chromatic-usual);
+}
+
